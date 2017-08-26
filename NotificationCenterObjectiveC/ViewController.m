@@ -10,20 +10,26 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic)IBOutlet UILabel *nameLabel;
+
 @end
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(result:) name:@"name" object:nil];
+}
+
+-(void)result:(NSNotification *) notification{
+    NSString *name = notification.object;
+    self.nameLabel.text = name;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
-
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10D115DC1F5106F70080AF72 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D115DB1F5106F70080AF72 /* ViewController2.m */; };
 		10E3B3D11F50098E0041752B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E3B3D01F50098E0041752B /* main.m */; };
 		10E3B3D41F50098E0041752B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E3B3D31F50098E0041752B /* AppDelegate.m */; };
 		10E3B3D71F50098E0041752B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E3B3D61F50098E0041752B /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10D115DA1F5106F70080AF72 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = ../ViewController2.h; sourceTree = "<group>"; };
+		10D115DB1F5106F70080AF72 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = ../ViewController2.m; sourceTree = "<group>"; };
 		10E3B3CC1F50098E0041752B /* NotificationCenterObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationCenterObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E3B3D01F50098E0041752B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10E3B3D21F50098E0041752B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				10E3B3D31F50098E0041752B /* AppDelegate.m */,
 				10E3B3D51F50098E0041752B /* ViewController.h */,
 				10E3B3D61F50098E0041752B /* ViewController.m */,
+				10D115DA1F5106F70080AF72 /* ViewController2.h */,
+				10D115DB1F5106F70080AF72 /* ViewController2.m */,
 				10E3B3D81F50098E0041752B /* Main.storyboard */,
 				10E3B3DB1F50098E0041752B /* Assets.xcassets */,
 				10E3B3DD1F50098E0041752B /* LaunchScreen.storyboard */,
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					10E3B3CB1F50098E0041752B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E3B3D71F50098E0041752B /* ViewController.m in Sources */,
+				10D115DC1F5106F70080AF72 /* ViewController2.m in Sources */,
 				10E3B3D41F50098E0041752B /* AppDelegate.m in Sources */,
 				10E3B3D11F50098E0041752B /* main.m in Sources */,
 			);
@@ -272,10 +279,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NotificationCenterObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ChungSama.NotificationCenterObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NotificationCenterObjectiveC/NotificationCenterObjectiveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -283,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NotificationCenterObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ChungSama.NotificationCenterObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NotificationCenterObjectiveC/NotificationCenterObjectiveC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -309,6 +323,7 @@
 				10E3B3E51F50098E0041752B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
